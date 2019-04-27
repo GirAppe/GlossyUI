@@ -1,0 +1,6 @@
+framework module Pods_GlossyUI_Example {
+  umbrella header "Pods-GlossyUI_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

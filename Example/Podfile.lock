@@ -1,0 +1,16 @@
+PODS:
+  - GlossyUI (0.1.0)
+
+DEPENDENCIES:
+  - GlossyUI (from `../`)
+
+EXTERNAL SOURCES:
+  GlossyUI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GlossyUI: 9f7af1c1b298cae8d0ad64723b72e4ad2ab5189d
+
+PODFILE CHECKSUM: 86c4f7eeb5d3d053fbc1a20dc9ed9cb9089a232b
+
+COCOAPODS: 1.6.1

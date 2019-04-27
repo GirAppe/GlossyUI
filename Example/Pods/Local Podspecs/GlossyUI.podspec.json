@@ -1,0 +1,31 @@
+{
+  "name": "GlossyUI",
+  "version": "0.1.0",
+  "summary": "GlossyUI adds surface behaviours (like shine respoding to phone motion) to standard controls  (UILabel, UIButton, UIImageView)",
+  "description": "GlossyUI adds surface behaviours (like shine respoding to phone motion) to standard controls (UILabel, UIButton, UIImageView)",
+  "homepage": "https://github.com/GirAppe/GlossyUI",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Andrzej Michnia": "amichnia@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/GirAppe/GlossyUI.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "GlossyUI/Classes/**/*",
+  "resource_bundles": {
+    "GlossyUI": [
+      "GlossyUI/Assets/*.png"
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "CoreMotion"
+  ]
+}

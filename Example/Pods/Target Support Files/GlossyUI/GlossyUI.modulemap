@@ -1,0 +1,6 @@
+framework module GlossyUI {
+  umbrella header "GlossyUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

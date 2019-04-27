@@ -1,0 +1,6 @@
+use_frameworks!
+platform :ios, '10.0'
+
+target 'GlossyUI_Example' do
+  pod 'GlossyUI', :path => '../'
+end

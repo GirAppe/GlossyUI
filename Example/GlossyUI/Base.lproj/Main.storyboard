@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RRi-B2-bBO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="y9i-5d-kpI">
+            <objects>
+                <viewController id="RRi-B2-bBO" customClass="ViewController" customModule="GlossyUI_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WGV-k9-C1t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ov1-ZU-Ldw" customClass="GlossLabel" customModule="GlossyUI">
+                                <rect key="frame" x="22" y="65" width="331" height="53"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="96N-dj-Jwt">
+                                <rect key="frame" x="20" y="278" width="335" height="111"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-400" maxValue="400" translatesAutoresizingMaskIntoConstraints="NO" id="3IQ-Tb-NFb">
+                                        <rect key="frame" x="-2" y="0.0" width="339" height="31"/>
+                                        <connections>
+                                            <action selector="sliderXupdated:" destination="RRi-B2-bBO" eventType="valueChanged" id="SCz-E1-SB9"/>
+                                        </connections>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-400" maxValue="400" translatesAutoresizingMaskIntoConstraints="NO" id="rgx-w5-UTx">
+                                        <rect key="frame" x="-2" y="81" width="339" height="31"/>
+                                        <connections>
+                                            <action selector="sliderYupdated:" destination="RRi-B2-bBO" eventType="valueChanged" id="RI2-Er-sk2"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ov1-ZU-Ldw" firstAttribute="leading" secondItem="8gU-O7-2eO" secondAttribute="leading" constant="22" id="7kO-TV-bBd"/>
+                            <constraint firstItem="8gU-O7-2eO" firstAttribute="trailing" secondItem="ov1-ZU-Ldw" secondAttribute="trailing" constant="22" id="Bp1-Sc-cbY"/>
+                            <constraint firstItem="96N-dj-Jwt" firstAttribute="leading" secondItem="8gU-O7-2eO" secondAttribute="leading" constant="20" id="NMY-IR-AEz"/>
+                            <constraint firstItem="8gU-O7-2eO" firstAttribute="trailing" secondItem="96N-dj-Jwt" secondAttribute="trailing" constant="20" id="RXm-Oc-Rdo"/>
+                            <constraint firstItem="ov1-ZU-Ldw" firstAttribute="top" secondItem="8gU-O7-2eO" secondAttribute="top" constant="45" id="S1d-ed-eHz"/>
+                            <constraint firstItem="96N-dj-Jwt" firstAttribute="centerX" secondItem="WGV-k9-C1t" secondAttribute="centerX" id="VEf-74-UHF"/>
+                            <constraint firstItem="96N-dj-Jwt" firstAttribute="centerY" secondItem="WGV-k9-C1t" secondAttribute="centerY" id="kAg-nb-ECY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8gU-O7-2eO"/>
+                    </view>
+                    <connections>
+                        <outlet property="glossLabel" destination="ov1-ZU-Ldw" id="asO-Fr-jog"/>
+                        <outlet property="sliderX" destination="3IQ-Tb-NFb" id="7X7-Aw-LeR"/>
+                        <outlet property="sliderY" destination="rgx-w5-UTx" id="upE-NB-KhG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ko-vP-QKz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
