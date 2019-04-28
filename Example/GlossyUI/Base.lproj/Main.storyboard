@@ -25,7 +25,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="96N-dj-Jwt">
-                                <rect key="frame" x="20" y="278" width="335" height="111"/>
+                                <rect key="frame" x="20" y="512" width="335" height="111"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-400" maxValue="400" translatesAutoresizingMaskIntoConstraints="NO" id="3IQ-Tb-NFb">
                                         <rect key="frame" x="-2" y="0.0" width="339" height="31"/>
@@ -41,20 +41,30 @@
                                     </slider>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skillcloud-test-matt" translatesAutoresizingMaskIntoConstraints="NO" id="Hga-XV-hoP" customClass="GlossImageView" customModule="GlossyUI">
+                                <rect key="frame" x="16" y="162" width="343" height="343"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Hga-XV-hoP" secondAttribute="height" multiplier="1:1" id="NgV-Z3-fPL"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ov1-ZU-Ldw" firstAttribute="leading" secondItem="8gU-O7-2eO" secondAttribute="leading" constant="22" id="7kO-TV-bBd"/>
                             <constraint firstItem="8gU-O7-2eO" firstAttribute="trailing" secondItem="ov1-ZU-Ldw" secondAttribute="trailing" constant="22" id="Bp1-Sc-cbY"/>
+                            <constraint firstItem="8gU-O7-2eO" firstAttribute="bottom" secondItem="96N-dj-Jwt" secondAttribute="bottom" constant="44" id="MHV-Kc-WHl"/>
                             <constraint firstItem="96N-dj-Jwt" firstAttribute="leading" secondItem="8gU-O7-2eO" secondAttribute="leading" constant="20" id="NMY-IR-AEz"/>
                             <constraint firstItem="8gU-O7-2eO" firstAttribute="trailing" secondItem="96N-dj-Jwt" secondAttribute="trailing" constant="20" id="RXm-Oc-Rdo"/>
                             <constraint firstItem="ov1-ZU-Ldw" firstAttribute="top" secondItem="8gU-O7-2eO" secondAttribute="top" constant="45" id="S1d-ed-eHz"/>
+                            <constraint firstItem="Hga-XV-hoP" firstAttribute="centerY" secondItem="WGV-k9-C1t" secondAttribute="centerY" id="UeW-PF-D0r"/>
                             <constraint firstItem="96N-dj-Jwt" firstAttribute="centerX" secondItem="WGV-k9-C1t" secondAttribute="centerX" id="VEf-74-UHF"/>
-                            <constraint firstItem="96N-dj-Jwt" firstAttribute="centerY" secondItem="WGV-k9-C1t" secondAttribute="centerY" id="kAg-nb-ECY"/>
+                            <constraint firstItem="Hga-XV-hoP" firstAttribute="centerX" secondItem="WGV-k9-C1t" secondAttribute="centerX" id="XB3-Ox-SG5"/>
+                            <constraint firstAttribute="trailing" secondItem="Hga-XV-hoP" secondAttribute="trailing" constant="16" id="jWl-le-LFR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8gU-O7-2eO"/>
                     </view>
                     <connections>
+                        <outlet property="glossImageView" destination="Hga-XV-hoP" id="pr2-sq-uXM"/>
                         <outlet property="glossLabel" destination="ov1-ZU-Ldw" id="asO-Fr-jog"/>
                         <outlet property="sliderX" destination="3IQ-Tb-NFb" id="7X7-Aw-LeR"/>
                         <outlet property="sliderY" destination="rgx-w5-UTx" id="upE-NB-KhG"/>
@@ -65,4 +75,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="skillcloud-test-matt" width="471" height="471"/>
+    </resources>
 </document>

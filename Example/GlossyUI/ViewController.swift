@@ -13,6 +13,7 @@ import GlossyUI
 class ViewController: UIViewController {
 
     @IBOutlet weak var glossLabel: GlossLabel!
+    @IBOutlet weak var glossImageView: GlossImageView!
     @IBOutlet weak var sliderX: UISlider!
     @IBOutlet weak var sliderY: UISlider!
 
@@ -27,6 +28,14 @@ class ViewController: UIViewController {
         glossLabel.initialOffset = CGPoint(x: -22, y: -200)
         glossLabel.setNeedsLayout()
         glossLabel.setNeedsDisplay()
+
+        glossImageView.matt = .image(UIImage(named: "skillcloud-test-matt")!)
+        glossImageView.gloss = .image(UIImage(named: "skillcloud-test-gloss")!)
+        glossImageView.shape = .image(UIImage(named: "skillcloud-test-mask")!)
+        glossImageView.reflex = Reflex(
+            image: UIImage(named: "skillcloud-test-blink")!,
+            style: .grid1x1
+        )
 
         sliderX.value = Float(glossLabel.initialOffset.x)
         sliderY.value = Float(glossLabel.initialOffset.y)
@@ -68,6 +77,11 @@ class ViewController: UIViewController {
         guard let motion = manager.deviceMotion?.gravity else { return }
 
         glossLabel.offset = CGPoint(
+            x: -220 * CGFloat(motion.x),
+            y: 120 * CGFloat(motion.y)
+        )
+
+        glossImageView.offset = CGPoint(
             x: -220 * CGFloat(motion.x),
             y: 120 * CGFloat(motion.y)
         )

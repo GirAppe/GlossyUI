@@ -7,12 +7,18 @@
 
 import UIKit
 
+/// Surface description. Use it to control what would be shown as matt/gloss
+///
+/// - color: fill with color
+/// - image: fill with image
+/// - pattern: fill with pattern
 public enum Surface {
     case color(UIColor)
     case image(UIImage)
     case pattern(UIImage)
 }
 
+/// Use it to modify reflex style, whenever you need custom reflections
 public struct Reflex {
     public let image: UIImage?
     public let spacing: CGFloat
