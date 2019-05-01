@@ -104,19 +104,6 @@ class ReflexView: UIView {
         height.isActive = true
     }
 
-    private func buildRow(from queue: inout [UIImageView], count: Int, spacing: CGFloat) -> UIStackView {
-        let range = 0..<count
-        let row = queue[range].map { $0 }
-        queue.removeSubrange(range)
-
-        let stackRow = UIStackView(arrangedSubviews: row)
-        stackRow.spacing = spacing
-        stackRow.axis = .horizontal
-        stackRow.distribution = .fillEqually
-        stackRow.translatesAutoresizingMaskIntoConstraints = false
-        return stackRow
-    }
-
     private func buildImageView(image: UIImage) -> UIImageView {
         let imageView = UIImageView(image: image)
         imageView.contentMode = .scaleAspectFill
