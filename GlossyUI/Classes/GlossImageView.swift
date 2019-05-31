@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class GlossImageView: UIImageView {
+public class GlossImageView: UIImageView, Offsetable {
 
     public override var contentMode: UIViewContentMode {
         get { return super.contentMode }
@@ -52,6 +52,16 @@ public class GlossImageView: UIImageView {
         build()
         return {}
     }()
+
+    public override func awakeFromNib() {
+        super.awakeFromNib()
+        setNeedsLayout()
+    }
+
+    public override func didMoveToSuperview() {
+        super.didMoveToSuperview()
+        setNeedsLayout()
+    }
 
     public override func layoutSubviews() {
         super.layoutSubviews()
@@ -133,6 +143,7 @@ public class GlossImageView: UIImageView {
     }
 
     private func build() {
+        dlog("Build \(self)...")
         glossView.contentMode = contentMode
         shapeView.contentMode = contentMode
 
@@ -181,5 +192,10 @@ public class GlossImageView: UIImageView {
 
         glossView.mask = reflexMaskView
         packageView.mask = shapeMaskView
+
+        dlog("Done")
+        // Prepare starting (not initial!) offset and register for updates
+        self.offset = MotionManager.shared.state.offset
+        MotionManager.shared.register(self)
     }
 }

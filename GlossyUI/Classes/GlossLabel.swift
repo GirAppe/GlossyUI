@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class GlossLabel: UILabel {
+public class GlossLabel: UILabel, Offsetable {
 
     override public var font: UIFont! {
         get { return super.font }
@@ -136,6 +136,7 @@ public class GlossLabel: UILabel {
     }
 
     private func build() {
+        dlog("Build \(self)...")
         super.textColor = .clear
 
         glossView.contentMode = .scaleAspectFill
@@ -198,5 +199,10 @@ public class GlossLabel: UILabel {
 
         glossView.mask = reflexMaskView
         packageView.mask = globalShapeMaskView
+
+        dlog("Done")
+        // Prepare starting (not initial!) offset and register for updates
+        self.offset = MotionManager.shared.state.offset
+        MotionManager.shared.register(self)
     }
 }

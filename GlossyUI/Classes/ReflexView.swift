@@ -111,4 +111,3 @@ class ReflexView: UIView {
         return imageView
     }
 }
-
