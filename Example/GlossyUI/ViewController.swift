@@ -117,7 +117,6 @@ class ViewController: UIViewController {
         }()
 
         if position != newPosition {
-            print("TRANSITION \(position) -> \(newPosition)")
             baseθ = θ
             baseψ = ψ
             position = newPosition
@@ -137,8 +136,6 @@ class ViewController: UIViewController {
         }() + baseRoll
 
         lastRoll = roll
-
-        print("\(roll.format(f: "02.2"))")
 
         glossImageView.offset = CGPoint(
             x: -4 * CGFloat(roll),
