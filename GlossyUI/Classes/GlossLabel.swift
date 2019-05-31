@@ -9,6 +9,26 @@ import UIKit
 
 public class GlossLabel: UILabel, Offsetable {
 
+    // MARK: - Public properties
+
+    public var reflex: Reflex = Reflex(spacing: -20) {
+        didSet { reflexView.build(with: reflex) }
+    }
+    public var gloss: Surface = .color(.white) {
+        didSet { updateGlow() }
+    }
+    public var matt: Surface = .color(.black) {
+        didSet { updateGlow() }
+    }
+    public var offset: CGPoint = .zero {
+        didSet { update() }
+    }
+    public var initialOffset: CGPoint = .zero {
+        didSet { update() }
+    }
+
+    // MARK: - Overrides
+
     override public var font: UIFont! {
         get { return super.font }
         set {
@@ -38,23 +58,8 @@ public class GlossLabel: UILabel, Offsetable {
         }
     }
 
-    public var reflex: Reflex = Reflex(spacing: -20) {
-        didSet { reflexView.build(with: reflex) }
-    }
-    public var gloss: Surface = .color(.white) {
-        didSet { updateGlow() }
-    }
-    public var matt: Surface = .color(.black) {
-        didSet { updateGlow() }
-    }
-    public var offset: CGPoint = .zero {
-        didSet { update() }
-    }
-    public var initialOffset: CGPoint = .zero {
-        didSet { update() }
-    }
+    // MARK: - Hierarchy
 
-    // Hierarchy
     private let packageView = UIView()
     private let mattView = UIImageView()
     private let glossView = UIImageView()
@@ -63,18 +68,23 @@ public class GlossLabel: UILabel, Offsetable {
     private let globalShapeMaskView = UIView()
     private let globalShapeView = UILabel()
 
+    // MARK: - Private properties
+
     private var centerX: NSLayoutConstraint?
     private var centerY: NSLayoutConstraint?
-
     private lazy var buildOnce: () -> Void = {
         build()
         return {}
     }()
 
+    // MARK: - Lifecycle
+
     public override func layoutSubviews() {
         super.layoutSubviews()
         buildOnce()
     }
+
+    // MARK: - Setup
 
     private func update() {
         let size = CGSize(

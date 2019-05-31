@@ -24,7 +24,7 @@ public struct Reflex {
     public let spacing: CGFloat
     public let style: Style
 
-    public init(image: UIImage? = nil, style: Style = .grid3x3, spacing: CGFloat = 0) {
+    public init(image: UIImage? = nil, spacing: CGFloat = 0, style: Style = .grid3x3) {
         self.image = image
         self.spacing = spacing
         self.style = style

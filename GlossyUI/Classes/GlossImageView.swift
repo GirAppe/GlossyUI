@@ -9,14 +9,7 @@ import UIKit
 
 public class GlossImageView: UIImageView, Offsetable {
 
-    public override var contentMode: UIViewContentMode {
-        get { return super.contentMode }
-        set {
-            super.contentMode = newValue
-            glossView.contentMode = newValue
-            shapeView.contentMode = newValue
-        }
-    }
+    // MARK: - Public properties
 
     public var reflex: Reflex = Reflex() {
         didSet { reflexView.build(with: reflex) }
@@ -37,7 +30,19 @@ public class GlossImageView: UIImageView, Offsetable {
         didSet { update() }
     }
 
-    // Hierarchy
+    // MARK: - Overrides
+
+    public override var contentMode: UIViewContentMode {
+        get { return super.contentMode }
+        set {
+            super.contentMode = newValue
+            glossView.contentMode = newValue
+            shapeView.contentMode = newValue
+        }
+    }
+
+    // MARK: - Hierarchy
+
     private let packageView = UIView()
     private let glossView = UIImageView()
     private let reflexMaskView = UIView()
@@ -45,28 +50,23 @@ public class GlossImageView: UIImageView, Offsetable {
     private let shapeMaskView = UIView()
     private let shapeView = UIImageView()
 
+    // MARK: - Private Properties
+
     private var centerX: NSLayoutConstraint?
     private var centerY: NSLayoutConstraint?
-
     private lazy var buildOnce: () -> Void = {
         build()
         return {}
     }()
 
-    public override func awakeFromNib() {
-        super.awakeFromNib()
-        setNeedsLayout()
-    }
-
-    public override func didMoveToSuperview() {
-        super.didMoveToSuperview()
-        setNeedsLayout()
-    }
+    // MARK: - Lifecycle
 
     public override func layoutSubviews() {
         super.layoutSubviews()
         buildOnce()
     }
+
+    // MARK: - Setup
 
     private func update() {
         let size = CGSize(

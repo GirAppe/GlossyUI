@@ -18,12 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ov1-ZU-Ldw" customClass="GlossLabel" customModule="GlossyUI">
-                                <rect key="frame" x="22" y="65" width="331" height="53"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="44"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="96N-dj-Jwt">
                                 <rect key="frame" x="20" y="512" width="335" height="111"/>
                                 <subviews>
@@ -40,6 +34,7 @@
                                         </connections>
                                     </slider>
                                 </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" hidden="YES"/>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skillcloud-test-matt" translatesAutoresizingMaskIntoConstraints="NO" id="Hga-XV-hoP" customClass="GlossImageView" customModule="GlossyUI">
                                 <rect key="frame" x="16" y="162" width="343" height="343"/>
@@ -47,6 +42,12 @@
                                     <constraint firstAttribute="width" secondItem="Hga-XV-hoP" secondAttribute="height" multiplier="1:1" id="NgV-Z3-fPL"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ov1-ZU-Ldw" customClass="GlossLabel" customModule="GlossyUI">
+                                <rect key="frame" x="22" y="65" width="331" height="53"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -56,12 +57,18 @@
                             <constraint firstItem="96N-dj-Jwt" firstAttribute="leading" secondItem="8gU-O7-2eO" secondAttribute="leading" constant="20" id="NMY-IR-AEz"/>
                             <constraint firstItem="8gU-O7-2eO" firstAttribute="trailing" secondItem="96N-dj-Jwt" secondAttribute="trailing" constant="20" id="RXm-Oc-Rdo"/>
                             <constraint firstItem="ov1-ZU-Ldw" firstAttribute="top" secondItem="8gU-O7-2eO" secondAttribute="top" constant="45" id="S1d-ed-eHz"/>
+                            <constraint firstItem="Hga-XV-hoP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8gU-O7-2eO" secondAttribute="top" priority="999" constant="40" id="URP-oi-E4V"/>
                             <constraint firstItem="Hga-XV-hoP" firstAttribute="centerY" secondItem="WGV-k9-C1t" secondAttribute="centerY" id="UeW-PF-D0r"/>
                             <constraint firstItem="96N-dj-Jwt" firstAttribute="centerX" secondItem="WGV-k9-C1t" secondAttribute="centerX" id="VEf-74-UHF"/>
                             <constraint firstItem="Hga-XV-hoP" firstAttribute="centerX" secondItem="WGV-k9-C1t" secondAttribute="centerX" id="XB3-Ox-SG5"/>
-                            <constraint firstAttribute="trailing" secondItem="Hga-XV-hoP" secondAttribute="trailing" constant="16" id="jWl-le-LFR"/>
+                            <constraint firstAttribute="trailing" secondItem="Hga-XV-hoP" secondAttribute="trailing" priority="753" constant="16" id="jWl-le-LFR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8gU-O7-2eO"/>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="jWl-le-LFR"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="glossImageView" destination="Hga-XV-hoP" id="pr2-sq-uXM"/>
@@ -71,6 +78,70 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ko-vP-QKz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fl3-7j-Yqk">
+            <objects>
+                <viewController id="MnB-27-ApY" customClass="ViewController" customModule="GlossyUI_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Xg-HW-mSj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heD-cC-PK5" customClass="GlossLabel" customModule="GlossyUI">
+                                <rect key="frame" x="22" y="65" width="331" height="53"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="JoJ-rm-vqU">
+                                <rect key="frame" x="20" y="512" width="335" height="111"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-2" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="ZrM-3u-gie">
+                                        <rect key="frame" x="-2" y="0.0" width="339" height="31"/>
+                                        <connections>
+                                            <action selector="sliderXupdated:" destination="MnB-27-ApY" eventType="valueChanged" id="T05-DY-ZpZ"/>
+                                        </connections>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-2" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="fQl-OH-zrC">
+                                        <rect key="frame" x="-2" y="81" width="339" height="31"/>
+                                        <connections>
+                                            <action selector="sliderYupdated:" destination="MnB-27-ApY" eventType="valueChanged" id="rFO-mg-kgC"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skillcloud-test-matt" translatesAutoresizingMaskIntoConstraints="NO" id="9O3-nT-w14" customClass="GlossImageView" customModule="GlossyUI">
+                                <rect key="frame" x="16" y="162" width="343" height="343"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9O3-nT-w14" secondAttribute="height" multiplier="1:1" id="mLE-oW-ifg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9O3-nT-w14" firstAttribute="centerY" secondItem="8Xg-HW-mSj" secondAttribute="centerY" id="2Dg-O0-qO9"/>
+                            <constraint firstAttribute="trailing" secondItem="9O3-nT-w14" secondAttribute="trailing" constant="16" id="3ht-cF-JPO"/>
+                            <constraint firstItem="ecw-40-dX5" firstAttribute="trailing" secondItem="heD-cC-PK5" secondAttribute="trailing" constant="22" id="br3-1H-JG3"/>
+                            <constraint firstItem="9O3-nT-w14" firstAttribute="centerX" secondItem="8Xg-HW-mSj" secondAttribute="centerX" id="bx7-sD-F5M"/>
+                            <constraint firstItem="JoJ-rm-vqU" firstAttribute="centerX" secondItem="8Xg-HW-mSj" secondAttribute="centerX" id="dUi-Mz-2lP"/>
+                            <constraint firstItem="JoJ-rm-vqU" firstAttribute="leading" secondItem="ecw-40-dX5" secondAttribute="leading" constant="20" id="f5U-R9-byS"/>
+                            <constraint firstItem="heD-cC-PK5" firstAttribute="top" secondItem="ecw-40-dX5" secondAttribute="top" constant="45" id="gPN-5S-039"/>
+                            <constraint firstItem="ecw-40-dX5" firstAttribute="bottom" secondItem="JoJ-rm-vqU" secondAttribute="bottom" constant="44" id="gY4-Cb-rv7"/>
+                            <constraint firstItem="heD-cC-PK5" firstAttribute="leading" secondItem="ecw-40-dX5" secondAttribute="leading" constant="22" id="iLd-jE-fDC"/>
+                            <constraint firstItem="ecw-40-dX5" firstAttribute="trailing" secondItem="JoJ-rm-vqU" secondAttribute="trailing" constant="20" id="vIy-K6-fPs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ecw-40-dX5"/>
+                    </view>
+                    <connections>
+                        <outlet property="glossImageView" destination="9O3-nT-w14" id="efV-z9-DEK"/>
+                        <outlet property="glossLabel" destination="heD-cC-PK5" id="nsD-q6-dCb"/>
+                        <outlet property="sliderX" destination="ZrM-3u-gie" id="GUL-Pp-Z1T"/>
+                        <outlet property="sliderY" destination="fQl-OH-zrC" id="XXB-ib-UpU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yFy-oU-4ri" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
