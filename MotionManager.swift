@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreMotion
+import UIKit
 
 class MotionManager {
 
@@ -45,6 +46,9 @@ class MotionManager {
         dlog("Motion manager setup done")
     }
 
+    var lastAttitude: CMAttitude? = nil
+    var lastOrientation: UIInterfaceOrientation = .portrait
+
     private func update() {
         guard let attitude = manager.deviceMotion?.attitude else { return }
 
@@ -81,7 +85,7 @@ extension MotionManager {
         var pitch: CGFloat = 0  // y
 
         private var position = Position.down
-        private let ε = 0.2
+        private let ε = 0.4
         private var baseθ = 0.0
         private var baseψ = 0.0
         private var baseRoll = 0.0
@@ -99,14 +103,32 @@ extension MotionManager {
             let siny_cosp = +2.0 * (w * z + x * y)
             let cosy_cosp = +1.0 - 2.0 * (y * y + z * z)
 
-            let ϕ = atan2(sinr_cosp, cosr_cosp)
-            let θ = fabs(sinp) >= 1 ? copysign(Double.pi / 2, sinp) : asin(sinp)
-            let ψ = atan2(siny_cosp, cosy_cosp)
+            var ϕ: Double = 0   // p
+            var θ: Double = 0   // r
+            var ψ: Double = 0   // y
+
+            let orientation = UIApplication.shared.statusBarOrientation
+            switch orientation {
+            case .portrait:
+                ϕ = atan2(sinr_cosp, cosr_cosp)
+                θ = fabs(sinp) >= 1 ? copysign(.pi / 2, sinp) : asin(sinp)
+                ψ = atan2(siny_cosp, cosy_cosp)
+            case .landscapeLeft:
+                θ = atan2(sinr_cosp, cosr_cosp)
+                ϕ = fabs(sinp) >= 1 ? copysign(.pi / 2, sinp) : asin(sinp)
+                ψ = atan2(siny_cosp, cosy_cosp)
+            case .landscapeRight:
+                θ = atan2(sinr_cosp, cosr_cosp)
+                ϕ = -1 * (fabs(sinp) >= 1 ? copysign(.pi / 2, sinp) : asin(sinp))
+                ψ = atan2(siny_cosp, cosy_cosp)
+            default:
+                break
+            }
 
             let newPosition: Position = {
                 switch ϕ {
-                case let n where n < Double.pi½ - ε: return .down
-                case let n where n > Double.pi½ + ε: return .up
+                case let n where n < .pi½ - ε: return .down
+                case let n where n > .pi½ + ε: return .up
                 default: return .front
                 }
             }()
@@ -116,19 +138,20 @@ extension MotionManager {
                 baseψ = ψ
                 position = newPosition
                 baseRoll = lastRoll
+                dlog("\(newPosition)")
             }
 
-            let pitch = ϕ / Double.pi
+            let pitch = ϕ / .pi
             let roll: Double = {
                 switch position {
                 case .down:
-                    return  1.0 * (θ - baseθ) / Double.pi // 0 after transition
+                    return  1.0 * (θ - baseθ) / .pi
                 case .front:
-                    return -0.7 * (ψ - baseψ) / Double.pi // 0 after transition
+                    return -0.7 * (ψ - baseψ) / .pi
                 case .up:
-                    return -1.0 * (θ - baseθ) / Double.pi // 0 after transition
+                    return -1.0 * (θ - baseθ) / .pi
                 }
-                }() + baseRoll
+            }() + baseRoll
 
             lastRoll = roll
 

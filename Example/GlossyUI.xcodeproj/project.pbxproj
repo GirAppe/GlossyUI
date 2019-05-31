@@ -13,6 +13,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		72E7039F2E8AC8394B4DADE5 /* Pods_GlossyUI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA33308E9125A53B1DDF68C /* Pods_GlossyUI_Example.framework */; };
+		CC093F4922A1D9A000F6644A /* licenses.html in Resources */ = {isa = PBXBuildFile; fileRef = CC093F4822A1D9A000F6644A /* licenses.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		6AF36ACD4DD03462FE3F8E87 /* Pods-GlossyUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlossyUI_Example.release.xcconfig"; path = "Target Support Files/Pods-GlossyUI_Example/Pods-GlossyUI_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BF018D93FAD3D67A6376D525 /* Pods-GlossyUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlossyUI_Example.debug.xcconfig"; path = "Target Support Files/Pods-GlossyUI_Example/Pods-GlossyUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C766F3B26871BEAF361ABD75 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CC093F4822A1D9A000F6644A /* licenses.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = licenses.html; sourceTree = "<group>"; };
 		CD100B372947665A34B8B3B7 /* Pods_GlossyUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlossyUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				CC093F4822A1D9A000F6644A /* licenses.html */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for GlossyUI";
@@ -182,6 +185,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				CC093F4922A1D9A000F6644A /* licenses.html in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,16 +22,11 @@ class ViewController: UIViewController {
         glossLabel.matt = .color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1))
         glossLabel.gloss = .color(#colorLiteral(red: 0.8510238528, green: 0.8510238528, blue: 0.8510238528, alpha: 1))
         glossLabel.initialOffset = CGPoint(x: -0.01, y: -0.5)
-        glossLabel.setNeedsLayout()
-        glossLabel.setNeedsDisplay()
 
-        glossImageView.matt = .image(UIImage(named: "skillcloud-test-matt")!)
-        glossImageView.gloss = .image(UIImage(named: "skillcloud-test-gloss")!)
-        glossImageView.shape = .image(UIImage(named: "skillcloud-test-mask")!)
-        glossImageView.reflex = Reflex(
-            image: UIImage(named: "skillcloud-test-blink")!,
-            style: .grid3x3
-        )
+        glossImageView.matt = .imageNamed("skillcloud-test-matt")
+        glossImageView.gloss = .imageNamed("skillcloud-test-gloss")
+        glossImageView.shape = .imageNamed("skillcloud-test-mask")
+        glossImageView.reflex = .with(imageNamed: "skillcloud-test-blink")
 
         sliderX?.value = Float(glossLabel.initialOffset.x)
         sliderY?.value = Float(glossLabel.initialOffset.y)
