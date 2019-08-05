@@ -7,50 +7,50 @@
 
 import UIKit
 
-public class GlossLabel: UILabel, Offsetable {
+open class GlossLabel: UILabel, Offsetable {
 
     // MARK: - Public properties
 
-    public var reflex: Reflex = Reflex(spacing: -20) {
+    open var reflex: Reflex = Reflex(spacing: -20) {
         didSet { reflexView.build(with: reflex) }
     }
-    public var gloss: Surface = .color(.white) {
+    open var gloss: Surface = .color(.white) {
         didSet { updateGlow() }
     }
-    public var matt: Surface = .color(.black) {
+    open var matt: Surface = .color(.black) {
         didSet { updateGlow() }
     }
-    public var offset: CGPoint = .zero {
+    open var offset: CGPoint = .zero {
         didSet { update() }
     }
-    public var initialOffset: CGPoint = .zero {
+    open var initialOffset: CGPoint = .zero {
         didSet { update() }
     }
 
     // MARK: - Overrides
 
-    override public var font: UIFont! {
+    override open var font: UIFont! {
         get { return super.font }
         set {
             globalShapeView.font = newValue
             super.font = newValue
         }
     }
-    override public var text: String? {
+    override open var text: String? {
         get { return super.text }
         set {
             globalShapeView.text = newValue
             super.text = newValue
         }
     }
-    override public var textAlignment: NSTextAlignment {
+    override open var textAlignment: NSTextAlignment {
         get { return super.textAlignment }
         set {
             super.textAlignment = newValue
             globalShapeView.textAlignment = newValue
         }
     }
-    override public var textColor: UIColor! {
+    override open var textColor: UIColor! {
         get { return mattView.backgroundColor }
         set {
             super.textColor = .clear
@@ -79,7 +79,7 @@ public class GlossLabel: UILabel, Offsetable {
 
     // MARK: - Lifecycle
 
-    public override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         buildOnce()
     }

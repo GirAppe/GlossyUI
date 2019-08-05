@@ -7,32 +7,32 @@
 
 import UIKit
 
-public class GlossImageView: UIImageView, Offsetable {
+open class GlossImageView: UIImageView, Offsetable {
 
     // MARK: - Public properties
 
-    public var reflex: Reflex = Reflex() {
+    open var reflex: Reflex = Reflex() {
         didSet { reflexView.build(with: reflex) }
     }
-    public var gloss: Surface = .color(.white) {
+    open var gloss: Surface = .color(.white) {
         didSet { updateGlow() }
     }
-    public var matt: Surface = .color(.black) {
+    open var matt: Surface = .color(.black) {
         didSet { updateGlow() }
     }
-    public var shape: Surface = .color(.clear) {
+    open var shape: Surface = .color(.clear) {
         didSet { updateGlow() }
     }
-    public var offset: CGPoint = .zero {
+    open var offset: CGPoint = .zero {
         didSet { update() }
     }
-    public var initialOffset: CGPoint = .zero {
+    open var initialOffset: CGPoint = .zero {
         didSet { update() }
     }
 
     // MARK: - Overrides
 
-    public override var contentMode: UIViewContentMode {
+    open override var contentMode: UIView.ContentMode {
         get { return super.contentMode }
         set {
             super.contentMode = newValue
@@ -61,7 +61,7 @@ public class GlossImageView: UIImageView, Offsetable {
 
     // MARK: - Lifecycle
 
-    public override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         buildOnce()
     }

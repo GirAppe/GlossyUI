@@ -7,295 +7,276 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02676996F6BEF898B46771D353A197EB /* GlossLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4188E8D968144D80A0F2CA0CCF46623B /* GlossLabel.swift */; };
-		075CA991DA61AC84B41318ED7974DE61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C370D7542F85F4CC3E07F753F7B364 /* Foundation.framework */; };
-		0F65A5CF4C73E4D7907AB103C18FB517 /* GlossAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9FC9AC29AA7B1E89F5B0E21EF8CCB5 /* GlossAttributes.swift */; };
-		1F7FB45164E8B99D54176911147D04CF /* GlossyUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 801E027B9751481F8357C762EAF01241 /* GlossyUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		368C3730CFD24C3E6F9BDC39D2089F4E /* GlossyUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B33A95027052F6F6D898CA41E255380A /* GlossyUI.bundle */; };
-		396B28F8273AE6C72B5B5580479C7E0C /* GlossImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E00B2CCEDF9D6A7D7BEEA7408B7633 /* GlossImageView.swift */; };
-		4C28F52A50D6A5B3C43F097A2E3F6784 /* Pods-GlossyUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE0BDAB337FF2CA7666456EA3FDD6E24 /* Pods-GlossyUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E8B8F9A46CB8ED046537F0331410835 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C25DBA2CC1EADA93FC357F746BDFD32 /* CoreMotion.framework */; };
-		58A58E053CF269210EC68354B3B22510 /* Pods-GlossyUI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F9C86090B260CAEA0CA7DEAA3AB6D4 /* Pods-GlossyUI_Example-dummy.m */; };
-		5C710D7EC5C1D40FEEA53FD9D8A042E7 /* blink1.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB91B60E8D72FA4F6BD8E635AB62A48 /* blink1.png */; };
-		74D2B515442D7799F21B426AB9A2980E /* ReflexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8686D7A5FF0EFCFA25D09648C24EB93 /* ReflexView.swift */; };
-		8EFCC14C31237E00D37A46BC1553A16D /* GlossyUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B347C99826886AE502306CB61CD1A1 /* GlossyUI-dummy.m */; };
-		9DE82E4998309783D6222AC339237660 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C370D7542F85F4CC3E07F753F7B364 /* Foundation.framework */; };
-		B32C36EFF21DEA5F4C9DF329479AE500 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D83AE263F483A7D5804BE4043105BF /* UIKit.framework */; };
-		CC9EF31022A1BC570016556D /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9EF30F22A1BC570016556D /* MotionManager.swift */; };
-		CC9EF31222A1BCA40016556D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9EF31122A1BCA40016556D /* Utils.swift */; };
+		035F5ADB77FA94C0370502D6B1212075 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47284341177CA6144F01485C6C36740A /* MotionManager.swift */; };
+		069B2AEF13C38DB359628F43845FE14B /* GlossAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB9D4FB57465C96CF705339C7B31FC /* GlossAttributes.swift */; };
+		07A6083FC94304859B828ADF03776786 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C9DED56A2E1880EB17888DC31A61C7D /* Foundation.framework */; };
+		0BE4FA9A037F8A9A78F40198745F11DA /* blink1.png in Resources */ = {isa = PBXBuildFile; fileRef = 83FA0A2316D7D479ADB8AA9A9C6F5205 /* blink1.png */; };
+		0C176D1BE03AD76D5B86AABE22B2CCAD /* Pods-GlossyUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5D9CD6A0C644E19C15F0A0CBD5ED740 /* Pods-GlossyUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11F49D6D03A0DAA83708378AA8EFFB73 /* Pods-GlossyUI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43421F80411490E554765D91251969F8 /* Pods-GlossyUI_Example-dummy.m */; };
+		1A4C6B9D7E92BCC604A19D0442667B46 /* GlossImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC75B44078DEB3DA3C2E44B0F625B6C /* GlossImageView.swift */; };
+		22C82ECD79EE96A43E5ECD4F3528618F /* GlossyUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ADAB7306D6C45E50F640BEFB71008BDE /* GlossyUI.bundle */; };
+		5FD64E6AB40D9B7AF41E1CE8D72B5F01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB79881FDD1690469A1C2D5A87BF84B /* UIKit.framework */; };
+		6B0663CA4DFEFB5E3B079274A959E616 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D459DF1921306EC9FACF86DDCDB178AD /* CoreMotion.framework */; };
+		7EC7A432B941473032DE84A7E5143D0F /* GlossyUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D7E62F9F3B0570E6C7DAC8E04AD8B /* GlossyUI-dummy.m */; };
+		9E60B478468D0B28109079784C4BF26F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC559C697F3B549A83FD8B6DA43AED6 /* Utils.swift */; };
+		9EB5E071D84187FAC33913682FEC2A96 /* GlossyUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 17726C8F69F294BEF6DC0F7F56F0CFEE /* GlossyUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D52E66657E65558CD64AC857D601DD3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C9DED56A2E1880EB17888DC31A61C7D /* Foundation.framework */; };
+		EAF712D2D021C97E44C067F114F7ECD4 /* GlossLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17095764275FD6BC72AC7B701C527F4 /* GlossLabel.swift */; };
+		F807C95F8DC709089C42C542FEF53F0C /* ReflexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DD8CA231312B4F7B8B1D68BCC0E2D4 /* ReflexView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0FE077C05A410C1F92006F54523EFF65 /* PBXContainerItemProxy */ = {
+		46FB64662AB8867D9B7D2B6FAD543EBD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F2AE0F85ED0E074F325E3591329B8DD6;
-			remoteInfo = "GlossyUI-GlossyUI";
-		};
-		569B02C081E133F276D6FAD3544FF1FC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6C7E51BC78CD8F79A2432ED286822C0F;
+			remoteGlobalIDString = FF847F4F8D531F234588E6BB4E3EC414;
 			remoteInfo = GlossyUI;
+		};
+		E92AB7E61C1D6368E8C15C1BAD4B6EA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2EB5A4EFDE0B535279C9BEFB3E86D8E;
+			remoteInfo = "GlossyUI-GlossyUI";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0397A62B105BC15B5E96BCBFD0096B67 /* Pods-GlossyUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GlossyUI_Example.release.xcconfig"; sourceTree = "<group>"; };
-		03F9C86090B260CAEA0CA7DEAA3AB6D4 /* Pods-GlossyUI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GlossyUI_Example-dummy.m"; sourceTree = "<group>"; };
-		102644EAEFDB6CD25223D0569CF808BC /* GlossyUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = GlossyUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1FAB9F6712F9A3D023C3DBF64B93A252 /* GlossyUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GlossyUI-Info.plist"; sourceTree = "<group>"; };
-		2CA5A626D45F01EC39BB423B9D1BE900 /* Pods_GlossyUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlossyUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E3B245851CB9BD246BCD61A9FC8BE6D /* Pods-GlossyUI_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GlossyUI_Example-frameworks.sh"; sourceTree = "<group>"; };
-		4188E8D968144D80A0F2CA0CCF46623B /* GlossLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlossLabel.swift; path = GlossyUI/Classes/GlossLabel.swift; sourceTree = "<group>"; };
-		4EEF10F791CF1B13983944470CF5677F /* GlossyUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GlossyUI-prefix.pch"; sourceTree = "<group>"; };
-		549E3A0BDA4412604021C6D5526EAC1F /* Pods-GlossyUI_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GlossyUI_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		5A4305C40D466AF676748E1CC4DF8B03 /* GlossyUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GlossyUI.modulemap; sourceTree = "<group>"; };
-		6BE54A53504B3D8D49D727C37B38DE61 /* Pods-GlossyUI_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GlossyUI_Example-Info.plist"; sourceTree = "<group>"; };
-		730A3745FED5D34B73D29845293562A7 /* Pods-GlossyUI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GlossyUI_Example.modulemap"; sourceTree = "<group>"; };
-		73E00B2CCEDF9D6A7D7BEEA7408B7633 /* GlossImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlossImageView.swift; path = GlossyUI/Classes/GlossImageView.swift; sourceTree = "<group>"; };
-		801E027B9751481F8357C762EAF01241 /* GlossyUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GlossyUI-umbrella.h"; sourceTree = "<group>"; };
-		81B347C99826886AE502306CB61CD1A1 /* GlossyUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GlossyUI-dummy.m"; sourceTree = "<group>"; };
-		9C25DBA2CC1EADA93FC357F746BDFD32 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		00525656FD69732C3EDA5C198DD92FB4 /* Pods-GlossyUI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GlossyUI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		04DD8CA231312B4F7B8B1D68BCC0E2D4 /* ReflexView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReflexView.swift; path = GlossyUI/Classes/ReflexView.swift; sourceTree = "<group>"; };
+		14DB9D4FB57465C96CF705339C7B31FC /* GlossAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlossAttributes.swift; path = GlossyUI/Classes/GlossAttributes.swift; sourceTree = "<group>"; };
+		17726C8F69F294BEF6DC0F7F56F0CFEE /* GlossyUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GlossyUI-umbrella.h"; sourceTree = "<group>"; };
+		1F5D7E62F9F3B0570E6C7DAC8E04AD8B /* GlossyUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GlossyUI-dummy.m"; sourceTree = "<group>"; };
+		20A1469D57BFAF950DD2C6569848DD2A /* GlossyUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GlossyUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20EBDF168EE036540C72F0455F643433 /* Pods-GlossyUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GlossyUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		295FE0E9D5051E6D1EBB0B78FE4CB452 /* ResourceBundle-GlossyUI-GlossyUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GlossyUI-GlossyUI-Info.plist"; sourceTree = "<group>"; };
+		2AEF5BA77D3BBED690B0786353682A4D /* GlossyUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GlossyUI-prefix.pch"; sourceTree = "<group>"; };
+		2F55DDEF4C3F64C178767FE51918E423 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		30577323CE172F491E0B884DF913EE9F /* Pods-GlossyUI_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GlossyUI_Example-frameworks.sh"; sourceTree = "<group>"; };
+		32CF31E47C551B3EE093B9E94C845C08 /* Pods-GlossyUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GlossyUI_Example.release.xcconfig"; sourceTree = "<group>"; };
+		43421F80411490E554765D91251969F8 /* Pods-GlossyUI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GlossyUI_Example-dummy.m"; sourceTree = "<group>"; };
+		47284341177CA6144F01485C6C36740A /* MotionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionManager.swift; path = GlossyUI/Classes/MotionManager.swift; sourceTree = "<group>"; };
+		4EC75B44078DEB3DA3C2E44B0F625B6C /* GlossImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlossImageView.swift; path = GlossyUI/Classes/GlossImageView.swift; sourceTree = "<group>"; };
+		557C3EC8B664920535C203DAC0F5BB38 /* Pods_GlossyUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlossyUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F61B670161A5D6EAD711E31ACB2DAA /* GlossyUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GlossyUI.modulemap; sourceTree = "<group>"; };
+		5C9DED56A2E1880EB17888DC31A61C7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5DBC53B6DD7C8C5CA27DAEA3A5E8B074 /* GlossyUI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GlossyUI.xcconfig; sourceTree = "<group>"; };
+		60A8737EE6FFB255A8A6CE46940B4921 /* Pods-GlossyUI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GlossyUI_Example.modulemap"; sourceTree = "<group>"; };
+		7EB79881FDD1690469A1C2D5A87BF84B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		81B756F2EE1FECC88AAD5EE3C6909F48 /* Pods-GlossyUI_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GlossyUI_Example-Info.plist"; sourceTree = "<group>"; };
+		83FA0A2316D7D479ADB8AA9A9C6F5205 /* blink1.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = blink1.png; path = GlossyUI/Assets/blink1.png; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E10074E5BEB6662650A486BB505DC87 /* ResourceBundle-GlossyUI-GlossyUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GlossyUI-GlossyUI-Info.plist"; sourceTree = "<group>"; };
-		A5F88092368439B54269F7CDBBCBA07B /* Pods-GlossyUI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GlossyUI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A7E46380D58E183B1EC8F0AA6B3CACA1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B33A95027052F6F6D898CA41E255380A /* GlossyUI.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlossyUI.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7C370D7542F85F4CC3E07F753F7B364 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		B8686D7A5FF0EFCFA25D09648C24EB93 /* ReflexView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReflexView.swift; path = GlossyUI/Classes/ReflexView.swift; sourceTree = "<group>"; };
-		CC9EF30F22A1BC570016556D /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
-		CC9EF31122A1BCA40016556D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		CF9FC9AC29AA7B1E89F5B0E21EF8CCB5 /* GlossAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlossAttributes.swift; path = GlossyUI/Classes/GlossAttributes.swift; sourceTree = "<group>"; };
-		CFB91B60E8D72FA4F6BD8E635AB62A48 /* blink1.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = blink1.png; path = GlossyUI/Assets/blink1.png; sourceTree = "<group>"; };
-		DE0BDAB337FF2CA7666456EA3FDD6E24 /* Pods-GlossyUI_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GlossyUI_Example-umbrella.h"; sourceTree = "<group>"; };
-		E4B9431F6DF2763CF6C429F9C2F0E95C /* GlossyUI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GlossyUI.xcconfig; sourceTree = "<group>"; };
-		F2D83AE263F483A7D5804BE4043105BF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		F42E22E644900C8506C5ECCDC82A3032 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		F84E0A73040BD8A0C13B487F4347BD6A /* GlossyUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GlossyUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB53D924B05B561DACFB575E4B8FAB93 /* Pods-GlossyUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GlossyUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A17095764275FD6BC72AC7B701C527F4 /* GlossLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlossLabel.swift; path = GlossyUI/Classes/GlossLabel.swift; sourceTree = "<group>"; };
+		A261E633BFADBCE758298A531E7469EB /* Pods-GlossyUI_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GlossyUI_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		A579A93542F6322C80D664176F95FE13 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		ADAB7306D6C45E50F640BEFB71008BDE /* GlossyUI.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlossyUI.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D459DF1921306EC9FACF86DDCDB178AD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		E299F0877CA20446702027F18FD1CFC6 /* GlossyUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GlossyUI-Info.plist"; sourceTree = "<group>"; };
+		E5D9CD6A0C644E19C15F0A0CBD5ED740 /* Pods-GlossyUI_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GlossyUI_Example-umbrella.h"; sourceTree = "<group>"; };
+		EAC559C697F3B549A83FD8B6DA43AED6 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = GlossyUI/Classes/Utils.swift; sourceTree = "<group>"; };
+		FFE2C5B5DAA6E65CEB1F06E650BE6523 /* GlossyUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = GlossyUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1E2B84CFF30774DB48B4423D2D8C58E4 /* Frameworks */ = {
+		6F4491EB83C1F056837CFF438F26DB1E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E8B8F9A46CB8ED046537F0331410835 /* CoreMotion.framework in Frameworks */,
-				075CA991DA61AC84B41318ED7974DE61 /* Foundation.framework in Frameworks */,
-				B32C36EFF21DEA5F4C9DF329479AE500 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3501FDB2A8EB125E7E7ADDDA57057F4C /* Frameworks */ = {
+		AD911D68786868F4960C2B2F7AC6CAB7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DE82E4998309783D6222AC339237660 /* Foundation.framework in Frameworks */,
+				6B0663CA4DFEFB5E3B079274A959E616 /* CoreMotion.framework in Frameworks */,
+				07A6083FC94304859B828ADF03776786 /* Foundation.framework in Frameworks */,
+				5FD64E6AB40D9B7AF41E1CE8D72B5F01 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7569E37719ABB4E7E5D3B3C433B41B6A /* Frameworks */ = {
+		D2482173B19A262C96067EB1E9ADB002 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D52E66657E65558CD64AC857D601DD3B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		018C53BC35156A7100816898EA917050 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BDDD3FF8DDB9372034F2A153310B1318 /* GlossyUI */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				44E8B51932B3A426B90C7080FBD490AA /* iOS */,
+				12B23E5D15FB13D21B244F4A3E25B8FA /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		27F04E062845ECEA5E1698B7D2FEB79D /* Products */ = {
+		12B23E5D15FB13D21B244F4A3E25B8FA /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				B33A95027052F6F6D898CA41E255380A /* GlossyUI.bundle */,
-				F84E0A73040BD8A0C13B487F4347BD6A /* GlossyUI.framework */,
-				2CA5A626D45F01EC39BB423B9D1BE900 /* Pods_GlossyUI_Example.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		44E8B51932B3A426B90C7080FBD490AA /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				9C25DBA2CC1EADA93FC357F746BDFD32 /* CoreMotion.framework */,
-				B7C370D7542F85F4CC3E07F753F7B364 /* Foundation.framework */,
-				F2D83AE263F483A7D5804BE4043105BF /* UIKit.framework */,
+				D459DF1921306EC9FACF86DDCDB178AD /* CoreMotion.framework */,
+				5C9DED56A2E1880EB17888DC31A61C7D /* Foundation.framework */,
+				7EB79881FDD1690469A1C2D5A87BF84B /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		59E972D5E8396B5BF3BA3FEAD05380BE /* Resources */ = {
+		1B6083E615360C5B02053BDC8FB5735C /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				CFB91B60E8D72FA4F6BD8E635AB62A48 /* blink1.png */,
+				FFE2C5B5DAA6E65CEB1F06E650BE6523 /* GlossyUI.podspec */,
+				A579A93542F6322C80D664176F95FE13 /* LICENSE */,
+				2F55DDEF4C3F64C178767FE51918E423 /* README.md */,
 			);
-			name = Resources;
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		20C3D401866A865EAD829A718A356E2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADAB7306D6C45E50F640BEFB71008BDE /* GlossyUI.bundle */,
+				20A1469D57BFAF950DD2C6569848DD2A /* GlossyUI.framework */,
+				557C3EC8B664920535C203DAC0F5BB38 /* Pods_GlossyUI_Example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AF11D71774D5A49B8B931A66C3EDA13 /* GlossyUI */ = {
+			isa = PBXGroup;
+			children = (
+				A17095764275FD6BC72AC7B701C527F4 /* GlossLabel.swift */,
+				4EC75B44078DEB3DA3C2E44B0F625B6C /* GlossImageView.swift */,
+				14DB9D4FB57465C96CF705339C7B31FC /* GlossAttributes.swift */,
+				47284341177CA6144F01485C6C36740A /* MotionManager.swift */,
+				04DD8CA231312B4F7B8B1D68BCC0E2D4 /* ReflexView.swift */,
+				EAC559C697F3B549A83FD8B6DA43AED6 /* Utils.swift */,
+				1B6083E615360C5B02053BDC8FB5735C /* Pod */,
+				BA72783F528651C1F28B1EF1204CF5BD /* Resources */,
+				CA0D4191F332B79D1638C70D8690D6E2 /* Support Files */,
+			);
+			name = GlossyUI;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		6015F05B71F7022E7FDCF40CAE80B2F9 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F506781BEFA797A993BC75CC3DB32E59 /* Pods-GlossyUI_Example */,
+				AB20B52358A37BDD7004654C7199BDF9 /* Pods-GlossyUI_Example */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9CA89803B151E680F300A8EA8805AD56 /* Support Files */ = {
+		AB20B52358A37BDD7004654C7199BDF9 /* Pods-GlossyUI_Example */ = {
 			isa = PBXGroup;
 			children = (
-				5A4305C40D466AF676748E1CC4DF8B03 /* GlossyUI.modulemap */,
-				E4B9431F6DF2763CF6C429F9C2F0E95C /* GlossyUI.xcconfig */,
-				81B347C99826886AE502306CB61CD1A1 /* GlossyUI-dummy.m */,
-				1FAB9F6712F9A3D023C3DBF64B93A252 /* GlossyUI-Info.plist */,
-				4EEF10F791CF1B13983944470CF5677F /* GlossyUI-prefix.pch */,
-				801E027B9751481F8357C762EAF01241 /* GlossyUI-umbrella.h */,
-				9E10074E5BEB6662650A486BB505DC87 /* ResourceBundle-GlossyUI-GlossyUI-Info.plist */,
+				60A8737EE6FFB255A8A6CE46940B4921 /* Pods-GlossyUI_Example.modulemap */,
+				00525656FD69732C3EDA5C198DD92FB4 /* Pods-GlossyUI_Example-acknowledgements.markdown */,
+				A261E633BFADBCE758298A531E7469EB /* Pods-GlossyUI_Example-acknowledgements.plist */,
+				43421F80411490E554765D91251969F8 /* Pods-GlossyUI_Example-dummy.m */,
+				30577323CE172F491E0B884DF913EE9F /* Pods-GlossyUI_Example-frameworks.sh */,
+				81B756F2EE1FECC88AAD5EE3C6909F48 /* Pods-GlossyUI_Example-Info.plist */,
+				E5D9CD6A0C644E19C15F0A0CBD5ED740 /* Pods-GlossyUI_Example-umbrella.h */,
+				20EBDF168EE036540C72F0455F643433 /* Pods-GlossyUI_Example.debug.xcconfig */,
+				32CF31E47C551B3EE093B9E94C845C08 /* Pods-GlossyUI_Example.release.xcconfig */,
+			);
+			name = "Pods-GlossyUI_Example";
+			path = "Target Support Files/Pods-GlossyUI_Example";
+			sourceTree = "<group>";
+		};
+		BA72783F528651C1F28B1EF1204CF5BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83FA0A2316D7D479ADB8AA9A9C6F5205 /* blink1.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CA0D4191F332B79D1638C70D8690D6E2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				55F61B670161A5D6EAD711E31ACB2DAA /* GlossyUI.modulemap */,
+				5DBC53B6DD7C8C5CA27DAEA3A5E8B074 /* GlossyUI.xcconfig */,
+				1F5D7E62F9F3B0570E6C7DAC8E04AD8B /* GlossyUI-dummy.m */,
+				E299F0877CA20446702027F18FD1CFC6 /* GlossyUI-Info.plist */,
+				2AEF5BA77D3BBED690B0786353682A4D /* GlossyUI-prefix.pch */,
+				17726C8F69F294BEF6DC0F7F56F0CFEE /* GlossyUI-umbrella.h */,
+				295FE0E9D5051E6D1EBB0B78FE4CB452 /* ResourceBundle-GlossyUI-GlossyUI-Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/GlossyUI";
-			sourceTree = "<group>";
-		};
-		BDDD3FF8DDB9372034F2A153310B1318 /* GlossyUI */ = {
-			isa = PBXGroup;
-			children = (
-				CF9FC9AC29AA7B1E89F5B0E21EF8CCB5 /* GlossAttributes.swift */,
-				73E00B2CCEDF9D6A7D7BEEA7408B7633 /* GlossImageView.swift */,
-				4188E8D968144D80A0F2CA0CCF46623B /* GlossLabel.swift */,
-				B8686D7A5FF0EFCFA25D09648C24EB93 /* ReflexView.swift */,
-				CC9EF30F22A1BC570016556D /* MotionManager.swift */,
-				CC9EF31122A1BCA40016556D /* Utils.swift */,
-				EC226091225C160208615D1290D36C46 /* Pod */,
-				59E972D5E8396B5BF3BA3FEAD05380BE /* Resources */,
-				9CA89803B151E680F300A8EA8805AD56 /* Support Files */,
-			);
-			name = GlossyUI;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				018C53BC35156A7100816898EA917050 /* Development Pods */,
+				F7555F915E6DFF32372F0416378A6CA9 /* Development Pods */,
 				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
-				27F04E062845ECEA5E1698B7D2FEB79D /* Products */,
+				20C3D401866A865EAD829A718A356E2F /* Products */,
 				6015F05B71F7022E7FDCF40CAE80B2F9 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		EC226091225C160208615D1290D36C46 /* Pod */ = {
+		F7555F915E6DFF32372F0416378A6CA9 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				102644EAEFDB6CD25223D0569CF808BC /* GlossyUI.podspec */,
-				F42E22E644900C8506C5ECCDC82A3032 /* LICENSE */,
-				A7E46380D58E183B1EC8F0AA6B3CACA1 /* README.md */,
+				3AF11D71774D5A49B8B931A66C3EDA13 /* GlossyUI */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		F506781BEFA797A993BC75CC3DB32E59 /* Pods-GlossyUI_Example */ = {
-			isa = PBXGroup;
-			children = (
-				730A3745FED5D34B73D29845293562A7 /* Pods-GlossyUI_Example.modulemap */,
-				A5F88092368439B54269F7CDBBCBA07B /* Pods-GlossyUI_Example-acknowledgements.markdown */,
-				549E3A0BDA4412604021C6D5526EAC1F /* Pods-GlossyUI_Example-acknowledgements.plist */,
-				03F9C86090B260CAEA0CA7DEAA3AB6D4 /* Pods-GlossyUI_Example-dummy.m */,
-				2E3B245851CB9BD246BCD61A9FC8BE6D /* Pods-GlossyUI_Example-frameworks.sh */,
-				6BE54A53504B3D8D49D727C37B38DE61 /* Pods-GlossyUI_Example-Info.plist */,
-				DE0BDAB337FF2CA7666456EA3FDD6E24 /* Pods-GlossyUI_Example-umbrella.h */,
-				FB53D924B05B561DACFB575E4B8FAB93 /* Pods-GlossyUI_Example.debug.xcconfig */,
-				0397A62B105BC15B5E96BCBFD0096B67 /* Pods-GlossyUI_Example.release.xcconfig */,
-			);
-			name = "Pods-GlossyUI_Example";
-			path = "Target Support Files/Pods-GlossyUI_Example";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2DA86C6245FC157FE1C1E46B3368F42B /* Headers */ = {
+		97487B448F1F5881F23A1FA7D19967C8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C28F52A50D6A5B3C43F097A2E3F6784 /* Pods-GlossyUI_Example-umbrella.h in Headers */,
+				0C176D1BE03AD76D5B86AABE22B2CCAD /* Pods-GlossyUI_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3EF89BBF901E8F01D5B9E9CF74DA5205 /* Headers */ = {
+		977BF5E6FB9CF81A21BC88891C7AD7A8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F7FB45164E8B99D54176911147D04CF /* GlossyUI-umbrella.h in Headers */,
+				9EB5E071D84187FAC33913682FEC2A96 /* GlossyUI-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6C7E51BC78CD8F79A2432ED286822C0F /* GlossyUI */ = {
+		006B5BFD917C86D5F5B91FEF14046482 /* Pods-GlossyUI_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BB92BAE96619022F6574BB44094DE86 /* Build configuration list for PBXNativeTarget "GlossyUI" */;
+			buildConfigurationList = D65611703705AAC19928DB5F7E42072E /* Build configuration list for PBXNativeTarget "Pods-GlossyUI_Example" */;
 			buildPhases = (
-				3EF89BBF901E8F01D5B9E9CF74DA5205 /* Headers */,
-				7B030A13A9EDAEF6DA0714DE1D393A4C /* Sources */,
-				1E2B84CFF30774DB48B4423D2D8C58E4 /* Frameworks */,
-				19C74DC77ED62D822978F562C335E53D /* Resources */,
+				97487B448F1F5881F23A1FA7D19967C8 /* Headers */,
+				4692E1C0BCE2F7E97F743A980B81E6AF /* Sources */,
+				D2482173B19A262C96067EB1E9ADB002 /* Frameworks */,
+				C23FC4D95D2721F0BF5BD8BAFDC7F262 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				24EA5E8090701C7FF4807119908E213B /* PBXTargetDependency */,
-			);
-			name = GlossyUI;
-			productName = GlossyUI;
-			productReference = F84E0A73040BD8A0C13B487F4347BD6A /* GlossyUI.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		8C0B7825B323FB572143DBFD677BF18A /* Pods-GlossyUI_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C979EA86DDB8A3D82E179759CC1DEBFD /* Build configuration list for PBXNativeTarget "Pods-GlossyUI_Example" */;
-			buildPhases = (
-				2DA86C6245FC157FE1C1E46B3368F42B /* Headers */,
-				F3E1656DCC114298013C78E33D4B308C /* Sources */,
-				3501FDB2A8EB125E7E7ADDDA57057F4C /* Frameworks */,
-				41F92631B1F9937866A114C37A7CDA33 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				87C1DDA9E4C78ABFA131D6999EA38E42 /* PBXTargetDependency */,
+				40425A30162EEED40682B97693102937 /* PBXTargetDependency */,
 			);
 			name = "Pods-GlossyUI_Example";
 			productName = "Pods-GlossyUI_Example";
-			productReference = 2CA5A626D45F01EC39BB423B9D1BE900 /* Pods_GlossyUI_Example.framework */;
+			productReference = 557C3EC8B664920535C203DAC0F5BB38 /* Pods_GlossyUI_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F2AE0F85ED0E074F325E3591329B8DD6 /* GlossyUI-GlossyUI */ = {
+		F2EB5A4EFDE0B535279C9BEFB3E86D8E /* GlossyUI-GlossyUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 253A9905C727613E5C89282B1B10B7D9 /* Build configuration list for PBXNativeTarget "GlossyUI-GlossyUI" */;
+			buildConfigurationList = C57B2692D03DB0D87FCCEC91E4D24419 /* Build configuration list for PBXNativeTarget "GlossyUI-GlossyUI" */;
 			buildPhases = (
-				E96DB19D7A9BAEF070574BFD56B3FCE7 /* Sources */,
-				7569E37719ABB4E7E5D3B3C433B41B6A /* Frameworks */,
-				4319E665945DFC5021CE3263FC2502A6 /* Resources */,
+				BF7FE873920279A4A1D683AB4B55C039 /* Sources */,
+				6F4491EB83C1F056837CFF438F26DB1E /* Frameworks */,
+				1949F27A18B468E21460546F0DE479C7 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -303,8 +284,27 @@
 			);
 			name = "GlossyUI-GlossyUI";
 			productName = "GlossyUI-GlossyUI";
-			productReference = B33A95027052F6F6D898CA41E255380A /* GlossyUI.bundle */;
+			productReference = ADAB7306D6C45E50F640BEFB71008BDE /* GlossyUI.bundle */;
 			productType = "com.apple.product-type.bundle";
+		};
+		FF847F4F8D531F234588E6BB4E3EC414 /* GlossyUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00064717C90A15790A3FEDC0A445D3E /* Build configuration list for PBXNativeTarget "GlossyUI" */;
+			buildPhases = (
+				977BF5E6FB9CF81A21BC88891C7AD7A8 /* Headers */,
+				FEF72EB0814902D75BA05FC9D2EB7560 /* Sources */,
+				AD911D68786868F4960C2B2F7AC6CAB7 /* Frameworks */,
+				9471C9AA92CB12F4FC49D9DD5C4FFCA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				006776C0F562FE96A64F2350FD052010 /* PBXTargetDependency */,
+			);
+			name = GlossyUI;
+			productName = GlossyUI;
+			productReference = 20A1469D57BFAF950DD2C6569848DD2A /* GlossyUI.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -312,107 +312,112 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					FF847F4F8D531F234588E6BB4E3EC414 = {
+						LastSwiftMigration = 1030;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 27F04E062845ECEA5E1698B7D2FEB79D /* Products */;
+			productRefGroup = 20C3D401866A865EAD829A718A356E2F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6C7E51BC78CD8F79A2432ED286822C0F /* GlossyUI */,
-				F2AE0F85ED0E074F325E3591329B8DD6 /* GlossyUI-GlossyUI */,
-				8C0B7825B323FB572143DBFD677BF18A /* Pods-GlossyUI_Example */,
+				FF847F4F8D531F234588E6BB4E3EC414 /* GlossyUI */,
+				F2EB5A4EFDE0B535279C9BEFB3E86D8E /* GlossyUI-GlossyUI */,
+				006B5BFD917C86D5F5B91FEF14046482 /* Pods-GlossyUI_Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		19C74DC77ED62D822978F562C335E53D /* Resources */ = {
+		1949F27A18B468E21460546F0DE479C7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				368C3730CFD24C3E6F9BDC39D2089F4E /* GlossyUI.bundle in Resources */,
+				0BE4FA9A037F8A9A78F40198745F11DA /* blink1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41F92631B1F9937866A114C37A7CDA33 /* Resources */ = {
+		9471C9AA92CB12F4FC49D9DD5C4FFCA9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C82ECD79EE96A43E5ECD4F3528618F /* GlossyUI.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4319E665945DFC5021CE3263FC2502A6 /* Resources */ = {
+		C23FC4D95D2721F0BF5BD8BAFDC7F262 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C710D7EC5C1D40FEEA53FD9D8A042E7 /* blink1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7B030A13A9EDAEF6DA0714DE1D393A4C /* Sources */ = {
+		4692E1C0BCE2F7E97F743A980B81E6AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F65A5CF4C73E4D7907AB103C18FB517 /* GlossAttributes.swift in Sources */,
-				CC9EF31022A1BC570016556D /* MotionManager.swift in Sources */,
-				396B28F8273AE6C72B5B5580479C7E0C /* GlossImageView.swift in Sources */,
-				CC9EF31222A1BCA40016556D /* Utils.swift in Sources */,
-				02676996F6BEF898B46771D353A197EB /* GlossLabel.swift in Sources */,
-				8EFCC14C31237E00D37A46BC1553A16D /* GlossyUI-dummy.m in Sources */,
-				74D2B515442D7799F21B426AB9A2980E /* ReflexView.swift in Sources */,
+				11F49D6D03A0DAA83708378AA8EFFB73 /* Pods-GlossyUI_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E96DB19D7A9BAEF070574BFD56B3FCE7 /* Sources */ = {
+		BF7FE873920279A4A1D683AB4B55C039 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3E1656DCC114298013C78E33D4B308C /* Sources */ = {
+		FEF72EB0814902D75BA05FC9D2EB7560 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58A58E053CF269210EC68354B3B22510 /* Pods-GlossyUI_Example-dummy.m in Sources */,
+				069B2AEF13C38DB359628F43845FE14B /* GlossAttributes.swift in Sources */,
+				1A4C6B9D7E92BCC604A19D0442667B46 /* GlossImageView.swift in Sources */,
+				EAF712D2D021C97E44C067F114F7ECD4 /* GlossLabel.swift in Sources */,
+				7EC7A432B941473032DE84A7E5143D0F /* GlossyUI-dummy.m in Sources */,
+				035F5ADB77FA94C0370502D6B1212075 /* MotionManager.swift in Sources */,
+				F807C95F8DC709089C42C542FEF53F0C /* ReflexView.swift in Sources */,
+				9E60B478468D0B28109079784C4BF26F /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		24EA5E8090701C7FF4807119908E213B /* PBXTargetDependency */ = {
+		006776C0F562FE96A64F2350FD052010 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "GlossyUI-GlossyUI";
-			target = F2AE0F85ED0E074F325E3591329B8DD6 /* GlossyUI-GlossyUI */;
-			targetProxy = 0FE077C05A410C1F92006F54523EFF65 /* PBXContainerItemProxy */;
+			target = F2EB5A4EFDE0B535279C9BEFB3E86D8E /* GlossyUI-GlossyUI */;
+			targetProxy = E92AB7E61C1D6368E8C15C1BAD4B6EA8 /* PBXContainerItemProxy */;
 		};
-		87C1DDA9E4C78ABFA131D6999EA38E42 /* PBXTargetDependency */ = {
+		40425A30162EEED40682B97693102937 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GlossyUI;
-			target = 6C7E51BC78CD8F79A2432ED286822C0F /* GlossyUI */;
-			targetProxy = 569B02C081E133F276D6FAD3544FF1FC /* PBXContainerItemProxy */;
+			target = FF847F4F8D531F234588E6BB4E3EC414 /* GlossyUI */;
+			targetProxy = 46FB64662AB8867D9B7D2B6FAD543EBD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1F1F8335F35A74BF8FBDEE26B7FB99EE /* Debug */ = {
+		16FBBBBED21F35431F683838DC5A770C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4B9431F6DF2763CF6C429F9C2F0E95C /* GlossyUI.xcconfig */;
+			baseConfigurationReference = 32CF31E47C551B3EE093B9E94C845C08 /* Pods-GlossyUI_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -423,109 +428,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GlossyUI/GlossyUI-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GlossyUI/GlossyUI-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-GlossyUI_Example/Pods-GlossyUI_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GlossyUI/GlossyUI.modulemap";
-				PRODUCT_MODULE_NAME = GlossyUI;
-				PRODUCT_NAME = GlossyUI;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GlossyUI_Example/Pods-GlossyUI_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3048B0C5C704DFFF688DA57F5380ED58 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		574DE8A2B5291D278E27AFC63C4EC92E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4B9431F6DF2763CF6C429F9C2F0E95C /* GlossyUI.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GlossyUI/GlossyUI-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GlossyUI/GlossyUI-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GlossyUI/GlossyUI.modulemap";
-				PRODUCT_MODULE_NAME = GlossyUI;
-				PRODUCT_NAME = GlossyUI;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -533,7 +448,7 @@
 			};
 			name = Release;
 		};
-		5B0C8287D755FD95091CF35D87FB8B2D /* Debug */ = {
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -592,14 +507,30 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		70989B420AA7A38A6297B3E1295DDF4B /* Release */ = {
+		47077344E0F4EF20B34940CA0D8E9DAC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4B9431F6DF2763CF6C429F9C2F0E95C /* GlossyUI.xcconfig */;
+			baseConfigurationReference = 5DBC53B6DD7C8C5CA27DAEA3A5E8B074 /* GlossyUI.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GlossyUI";
+				INFOPLIST_FILE = "Target Support Files/GlossyUI/ResourceBundle-GlossyUI-GlossyUI-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = GlossyUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		9D8BDA659F09A0321925205EA245B863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DBC53B6DD7C8C5CA27DAEA3A5E8B074 /* GlossyUI.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GlossyUI";
@@ -613,25 +544,68 @@
 			};
 			name = Release;
 		};
-		A0E64352A43010FDD5D1FC34A05048A3 /* Debug */ = {
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4B9431F6DF2763CF6C429F9C2F0E95C /* GlossyUI.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GlossyUI";
-				INFOPLIST_FILE = "Target Support Files/GlossyUI/ResourceBundle-GlossyUI-GlossyUI-Info.plist";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = GlossyUI;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
 			};
-			name = Debug;
+			name = Release;
 		};
-		AD236A73CF2E163698918004A15AAD01 /* Release */ = {
+		C736142C2F79C87CD0303FE6DA6A78B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0397A62B105BC15B5E96BCBFD0096B67 /* Pods-GlossyUI_Example.release.xcconfig */;
+			baseConfigurationReference = 20EBDF168EE036540C72F0455F643433 /* Pods-GlossyUI_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -657,6 +631,70 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE580830F412EDA01C67AE4968B9818E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DBC53B6DD7C8C5CA27DAEA3A5E8B074 /* GlossyUI.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GlossyUI/GlossyUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GlossyUI/GlossyUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GlossyUI/GlossyUI.modulemap";
+				PRODUCT_MODULE_NAME = GlossyUI;
+				PRODUCT_NAME = GlossyUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D304AA2BAEE901F2E38A79D84C27EEAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DBC53B6DD7C8C5CA27DAEA3A5E8B074 /* GlossyUI.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GlossyUI/GlossyUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GlossyUI/GlossyUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GlossyUI/GlossyUI.modulemap";
+				PRODUCT_MODULE_NAME = GlossyUI;
+				PRODUCT_NAME = GlossyUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -664,75 +702,41 @@
 			};
 			name = Release;
 		};
-		D1637D529D94DDE4E375C88707A2A2AD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB53D924B05B561DACFB575E4B8FAB93 /* Pods-GlossyUI_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GlossyUI_Example/Pods-GlossyUI_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GlossyUI_Example/Pods-GlossyUI_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		253A9905C727613E5C89282B1B10B7D9 /* Build configuration list for PBXNativeTarget "GlossyUI-GlossyUI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A0E64352A43010FDD5D1FC34A05048A3 /* Debug */,
-				70989B420AA7A38A6297B3E1295DDF4B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2BB92BAE96619022F6574BB44094DE86 /* Build configuration list for PBXNativeTarget "GlossyUI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1F1F8335F35A74BF8FBDEE26B7FB99EE /* Debug */,
-				574DE8A2B5291D278E27AFC63C4EC92E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5B0C8287D755FD95091CF35D87FB8B2D /* Debug */,
-				3048B0C5C704DFFF688DA57F5380ED58 /* Release */,
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C979EA86DDB8A3D82E179759CC1DEBFD /* Build configuration list for PBXNativeTarget "Pods-GlossyUI_Example" */ = {
+		A00064717C90A15790A3FEDC0A445D3E /* Build configuration list for PBXNativeTarget "GlossyUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D1637D529D94DDE4E375C88707A2A2AD /* Debug */,
-				AD236A73CF2E163698918004A15AAD01 /* Release */,
+				CE580830F412EDA01C67AE4968B9818E /* Debug */,
+				D304AA2BAEE901F2E38A79D84C27EEAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C57B2692D03DB0D87FCCEC91E4D24419 /* Build configuration list for PBXNativeTarget "GlossyUI-GlossyUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47077344E0F4EF20B34940CA0D8E9DAC /* Debug */,
+				9D8BDA659F09A0321925205EA245B863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D65611703705AAC19928DB5F7E42072E /* Build configuration list for PBXNativeTarget "Pods-GlossyUI_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C736142C2F79C87CD0303FE6DA6A78B4 /* Debug */,
+				16FBBBBED21F35431F683838DC5A770C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

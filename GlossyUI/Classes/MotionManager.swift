@@ -9,7 +9,7 @@ import Foundation
 import CoreMotion
 import UIKit
 
-class MotionManager {
+final internal class MotionManager {
 
     // MARK: - Shared instance
 
@@ -111,15 +111,15 @@ extension MotionManager {
             switch orientation {
             case .portrait:
                 ϕ = atan2(sinr_cosp, cosr_cosp)
-                θ = fabs(sinp) >= 1 ? copysign(.pi / 2, sinp) : asin(sinp)
+                θ = fabs(sinp) >= 1 ? copysign(.pi½, sinp) : asin(sinp)
                 ψ = atan2(siny_cosp, cosy_cosp)
             case .landscapeLeft:
                 θ = atan2(sinr_cosp, cosr_cosp)
-                ϕ = fabs(sinp) >= 1 ? copysign(.pi / 2, sinp) : asin(sinp)
+                ϕ = fabs(sinp) >= 1 ? copysign(.pi½, sinp) : asin(sinp)
                 ψ = atan2(siny_cosp, cosy_cosp)
             case .landscapeRight:
                 θ = atan2(sinr_cosp, cosr_cosp)
-                ϕ = -1 * (fabs(sinp) >= 1 ? copysign(.pi / 2, sinp) : asin(sinp))
+                ϕ = -1 * (fabs(sinp) >= 1 ? copysign(.pi½, sinp) : asin(sinp))
                 ψ = atan2(siny_cosp, cosy_cosp)
             default:
                 break

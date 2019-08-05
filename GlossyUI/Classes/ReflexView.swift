@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ReflexView: UIView {
+final internal class ReflexView: UIView {
 
     func defaultReflexImage() -> UIImage {
         let podMainBundle = Bundle(for: ReflexView.self)
