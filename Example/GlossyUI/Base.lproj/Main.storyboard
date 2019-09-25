@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hf1-Sm-39M">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4JI-fQ-VwZ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Logo and label-->
         <scene sceneID="FvS-dO-ZB1">
             <objects>
                 <navigationController id="hf1-Sm-39M" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Logo and label" id="w91-ik-EuK"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MSM-UD-dS0">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -26,16 +27,16 @@
             </objects>
             <point key="canvasLocation" x="-934" y="137"/>
         </scene>
-        <!--View Controller-->
+        <!--Logo And Label With Sliders View Controller-->
         <scene sceneID="y9i-5d-kpI">
             <objects>
-                <viewController id="RRi-B2-bBO" customClass="ViewController" customModule="GlossyUI_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RRi-B2-bBO" customClass="LogoAndLabelWithSlidersViewController" customModule="GlossyUI_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WGV-k9-C1t">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="96N-dj-Jwt">
-                                <rect key="frame" x="20" y="512" width="335" height="111"/>
+                                <rect key="frame" x="20" y="463" width="335" height="111"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-2" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="3IQ-Tb-NFb">
                                         <rect key="frame" x="-2" y="0.0" width="339" height="31"/>
@@ -104,10 +105,78 @@
             </objects>
             <point key="canvasLocation" x="118" y="136"/>
         </scene>
-        <!--View Controller-->
+        <!--Dodo Wallpaper View Controller-->
+        <scene sceneID="pGD-5j-O94">
+            <objects>
+                <viewController id="EZd-IX-hHF" customClass="DodoWallpaperViewController" customModule="GlossyUI_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Igu-H4-x29"/>
+                        <viewControllerLayoutGuide type="bottom" id="yvU-2h-L0r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Vm-D2-9Go">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sJV-TR-XfQ" customClass="GlossImageView" customModule="GlossyUI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sJV-TR-XfQ" secondAttribute="trailing" id="MDy-zh-Dcj"/>
+                            <constraint firstItem="sJV-TR-XfQ" firstAttribute="top" secondItem="1Vm-D2-9Go" secondAttribute="top" id="h4L-iI-gb9"/>
+                            <constraint firstItem="sJV-TR-XfQ" firstAttribute="leading" secondItem="1Vm-D2-9Go" secondAttribute="leading" id="hUK-FL-OM2"/>
+                            <constraint firstAttribute="bottom" secondItem="sJV-TR-XfQ" secondAttribute="bottom" id="vPd-Sz-T0v"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8N8-Al-dbS"/>
+                    <connections>
+                        <outlet property="glossImageView" destination="sJV-TR-XfQ" id="oXa-rw-33g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ppb-qh-bRD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="948.57571214392806"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2Y1-Oq-Ftn">
+            <objects>
+                <tabBarController id="4JI-fQ-VwZ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7fi-jv-shL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="hf1-Sm-39M" kind="relationship" relationship="viewControllers" id="Qg9-Tz-87f"/>
+                        <segue destination="ALD-fi-F9E" kind="relationship" relationship="viewControllers" id="heP-9s-koQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GUi-1M-ZIz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2334" y="498"/>
+        </scene>
+        <!--Background pattern-->
+        <scene sceneID="ynW-GJ-aMt">
+            <objects>
+                <navigationController id="ALD-fi-F9E" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Background pattern" id="CBR-sH-KTN"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="06v-MF-pf5">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="EZd-IX-hHF" kind="relationship" relationship="rootViewController" id="G51-bI-5uo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3o-BN-kBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-935" y="949"/>
+        </scene>
+        <!--Logo And Label With Sliders View Controller-->
         <scene sceneID="fl3-7j-Yqk">
             <objects>
-                <viewController id="MnB-27-ApY" customClass="ViewController" customModule="GlossyUI_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="MnB-27-ApY" customClass="LogoAndLabelWithSlidersViewController" customModule="GlossyUI_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Xg-HW-mSj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,7 +188,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="JoJ-rm-vqU">
-                                <rect key="frame" x="20" y="512" width="335" height="111"/>
+                                <rect key="frame" x="20" y="463" width="335" height="111"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-2" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="ZrM-3u-gie">
                                         <rect key="frame" x="-2" y="0.0" width="339" height="31"/>

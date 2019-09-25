@@ -3,6 +3,7 @@
 //  Pods
 //
 //  Created by Andrzej Michnia on 27/04/2019.
+//  Copyright (c) 2019 GirAppe Studio. All rights reserved.
 //
 
 import UIKit
@@ -11,19 +12,27 @@ open class GlossLabel: UILabel, Offsetable {
 
     // MARK: - Public properties
 
+    /// Strength of the effect between 0 and 1, where 0 means matt only and 1 is normal (default).
+    open var effectStrength: CGFloat = 1.0
+    /// Reflex to use. By default it uses built-in reflex image
     open var reflex: Reflex = Reflex(spacing: -20) {
         didSet { reflexView.build(with: reflex) }
     }
+    /// Glossy (front) surface
     open var gloss: Surface = .color(.white) {
         didSet { updateGlow() }
     }
+    /// Matt (background) surface
     open var matt: Surface = .color(.black) {
         didSet { updateGlow() }
     }
-    open var offset: CGPoint = .zero {
+    /// Initial offset of the reflex. This can be modified even if motion & scroll effects are on.
+    open var initialOffset: CGPoint = .zero {
         didSet { update() }
     }
-    open var initialOffset: CGPoint = .zero {
+    /// Reflex offst within the view. It is strongly reccomended to not update it manually,
+    /// unless motion & scroll effects are off
+    open var offset: CGPoint = .zero {
         didSet { update() }
     }
 
@@ -70,6 +79,8 @@ open class GlossLabel: UILabel, Offsetable {
 
     // MARK: - Private properties
 
+    private var useScrollingEffect: Bool = true
+
     private var centerX: NSLayoutConstraint?
     private var centerY: NSLayoutConstraint?
     private lazy var buildOnce: () -> Void = {
@@ -85,6 +96,17 @@ open class GlossLabel: UILabel, Offsetable {
     }
 
     // MARK: - Setup
+
+    public func setScrollingEffect(enabled: Bool) {
+        useScrollingEffect = enabled
+
+    }
+
+    public func setEffect(power: CGFloat) {
+
+    }
+
+    // MARK: - Updates and build
 
     private func update() {
         let size = CGSize(
@@ -143,6 +165,8 @@ open class GlossLabel: UILabel, Offsetable {
             mattView.image = nil
             mattView.backgroundColor = UIColor(patternImage: pattern)
         }
+
+        glossView.alpha = effectStrength
     }
 
     private func build() {

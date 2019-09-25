@@ -3,7 +3,7 @@
 //  GlossyUI
 //
 //  Created by Andrzej Michnia on 04/27/2019.
-//  Copyright (c) 2019 Andrzej Michnia. All rights reserved.
+//  Copyright (c) 2019 GirAppe Studio. All rights reserved.
 //
 
 import UIKit

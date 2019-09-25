@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		72E7039F2E8AC8394B4DADE5 /* Pods_GlossyUI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA33308E9125A53B1DDF68C /* Pods_GlossyUI_Example.framework */; };
 		CC093F4922A1D9A000F6644A /* licenses.html in Resources */ = {isa = PBXBuildFile; fileRef = CC093F4822A1D9A000F6644A /* licenses.html */; };
+		CC80D5ED2337B35B009B5EC9 /* LogoAndLabelWithSlidersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC80D5EC2337B35B009B5EC9 /* LogoAndLabelWithSlidersViewController.swift */; };
+		CC80D5EF2337B88D009B5EC9 /* DodoWallpaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC80D5EE2337B88D009B5EC9 /* DodoWallpaperViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,6 @@
 		607FACD01AFB9204008FA782 /* GlossyUI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlossyUI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -33,6 +33,8 @@
 		BF018D93FAD3D67A6376D525 /* Pods-GlossyUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlossyUI_Example.debug.xcconfig"; path = "Target Support Files/Pods-GlossyUI_Example/Pods-GlossyUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C766F3B26871BEAF361ABD75 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CC093F4822A1D9A000F6644A /* licenses.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = licenses.html; sourceTree = "<group>"; };
+		CC80D5EC2337B35B009B5EC9 /* LogoAndLabelWithSlidersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoAndLabelWithSlidersViewController.swift; sourceTree = "<group>"; };
+		CC80D5EE2337B88D009B5EC9 /* DodoWallpaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DodoWallpaperViewController.swift; sourceTree = "<group>"; };
 		CD100B372947665A34B8B3B7 /* Pods_GlossyUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlossyUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -82,7 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				CC80D5EC2337B35B009B5EC9 /* LogoAndLabelWithSlidersViewController.swift */,
+				CC80D5EE2337B88D009B5EC9 /* DodoWallpaperViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -150,7 +153,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = CocoaPods;
+				ORGANIZATIONNAME = "GirAppe Studio";
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -240,7 +243,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				CC80D5ED2337B35B009B5EC9 /* LogoAndLabelWithSlidersViewController.swift in Sources */,
+				CC80D5EF2337B88D009B5EC9 /* DodoWallpaperViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

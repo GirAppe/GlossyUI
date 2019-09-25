@@ -3,6 +3,7 @@
 //  GlossyUI
 //
 //  Created by Andrzej Michnia on 31/05/2019.
+//  Copyright (c) 2019 GirAppe Studio. All rights reserved.
 //
 
 import Foundation
@@ -159,11 +160,4 @@ extension MotionManager {
             self.pitch = -2 * CGFloat(pitch)
         }
     }
-}
-
-// MARK: - Observers protocol
-
-@objc protocol Offsetable: class {
-
-    var offset: CGPoint { get set }
 }

@@ -20,6 +20,7 @@
 		7EC7A432B941473032DE84A7E5143D0F /* GlossyUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D7E62F9F3B0570E6C7DAC8E04AD8B /* GlossyUI-dummy.m */; };
 		9E60B478468D0B28109079784C4BF26F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC559C697F3B549A83FD8B6DA43AED6 /* Utils.swift */; };
 		9EB5E071D84187FAC33913682FEC2A96 /* GlossyUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 17726C8F69F294BEF6DC0F7F56F0CFEE /* GlossyUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC80D5EB2337AC08009B5EC9 /* Offsetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC80D5EA2337AC08009B5EC9 /* Offsetable.swift */; };
 		D52E66657E65558CD64AC857D601DD3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C9DED56A2E1880EB17888DC31A61C7D /* Foundation.framework */; };
 		EAF712D2D021C97E44C067F114F7ECD4 /* GlossLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17095764275FD6BC72AC7B701C527F4 /* GlossLabel.swift */; };
 		F807C95F8DC709089C42C542FEF53F0C /* ReflexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DD8CA231312B4F7B8B1D68BCC0E2D4 /* ReflexView.swift */; };
@@ -71,6 +72,7 @@
 		A261E633BFADBCE758298A531E7469EB /* Pods-GlossyUI_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GlossyUI_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A579A93542F6322C80D664176F95FE13 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		ADAB7306D6C45E50F640BEFB71008BDE /* GlossyUI.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlossyUI.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC80D5EA2337AC08009B5EC9 /* Offsetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offsetable.swift; sourceTree = "<group>"; };
 		D459DF1921306EC9FACF86DDCDB178AD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		E299F0877CA20446702027F18FD1CFC6 /* GlossyUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GlossyUI-Info.plist"; sourceTree = "<group>"; };
 		E5D9CD6A0C644E19C15F0A0CBD5ED740 /* Pods-GlossyUI_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GlossyUI_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		3AF11D71774D5A49B8B931A66C3EDA13 /* GlossyUI */ = {
 			isa = PBXGroup;
 			children = (
+				CC80D5EA2337AC08009B5EC9 /* Offsetable.swift */,
 				A17095764275FD6BC72AC7B701C527F4 /* GlossLabel.swift */,
 				4EC75B44078DEB3DA3C2E44B0F625B6C /* GlossImageView.swift */,
 				14DB9D4FB57465C96CF705339C7B31FC /* GlossAttributes.swift */,
@@ -391,6 +394,7 @@
 				7EC7A432B941473032DE84A7E5143D0F /* GlossyUI-dummy.m in Sources */,
 				035F5ADB77FA94C0370502D6B1212075 /* MotionManager.swift in Sources */,
 				F807C95F8DC709089C42C542FEF53F0C /* ReflexView.swift in Sources */,
+				CC80D5EB2337AC08009B5EC9 /* Offsetable.swift in Sources */,
 				9E60B478468D0B28109079784C4BF26F /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
